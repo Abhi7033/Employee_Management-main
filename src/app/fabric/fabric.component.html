@@ -1,4 +1,4 @@
-<canvas id="canvas" #htmlCanvas></canvas>
+<canvas id="canvas" style="display:flex;justify-content: center;align-items: center"  #htmlCanvas></canvas>
 <div class="col-xl-12">
     <div class="row">
         <div class="col-xl-12 text-right">
@@ -9,7 +9,7 @@
 </div>
 <div class="card-header">Upload image</div>
 <div class="card-body text-center">
-    <img id="testImage" *ngIf="url" class="images-item-upload" [src]="url" (click)="addImageOnCanvas(url);">
+    <img id="testImage" *ngIf="url" style="width:20px; height:30px" [src]="url" (click)="addImageOnCanvas();">
     <input type="file" (change)="readUrl($event);">
     <br/>
     <br/>
